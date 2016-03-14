@@ -47,7 +47,10 @@ Once the container started, connect to it:
 ```
 # docker exec -it dshield bash
 ```
-The honeypot is installed in /src/cowrie/.
+The honeypot is installed in /src/cowrie/. You can track data report to DShield by looking for the following events in log/cowrie.log:
+```
+2016-03-14 21:32:59+0100 [-] dshield SUCCESS: Sent 52 bytes worth of data to secure.dshield.org
+```
 
 # Todo
 
