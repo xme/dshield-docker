@@ -1,10 +1,11 @@
-<<<<<<< HEAD
 DShield Docker
 ==============
 
-This Docker container starts a SSH honeypot (based on Cowrie[1]) and enables the DShield output module to report statistics to the SANS ISC DShield project.
+This Docker container starts a SSH honeypot (based on Cowrie[1]) and enables the DShield output module to report statistics to the SANS ISC DShield project. This project is based on Johannes Ulrich's Raspberry Pi sensor project[2].
 
 [1] https://github.com/micheloosterhof/cowrie
+[2] https://github.com/DShield-ISC/dshield
+
 
 # Building the image:
 
@@ -24,6 +25,9 @@ DSHIELD_APIKEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 DSHIELD_EMAIL=xxxxxxxxxxxxxxxxxxx
 ``` 
 Your credentials will be validated and the honeyport properly configured.
+Don't forget to register[1] if you don't already have an account.
+
+[1] https://www.dshield.org/register.html
 
 Boot the container:
 ```
@@ -45,10 +49,8 @@ Once the container started, connect to it:
 ```
 The honeypot is installed in /src/cowrie/.
 
-# To-do
+# Todo
 
-Implement more reporting, automatic log rotation, data persistence
-=======
-# dshield-docker
-Docker container running cowrie with DShield output enabled.
->>>>>>> 31ade3ece04d1697828268a32f65d72ab6a8669b
+- Implement more reporting
+- Automatic log rotation
+- Data persistence
