@@ -26,7 +26,7 @@ RUN \
 
 # Install the required packages
 RUN \
-  apt-get install -y git dialog libswitch-perl libwww-perl python-twisted python-crypto python-pyasn1 python-gmpy2 python-zope.interface python-pip python-gmpy python-gmpy2 mysql-client randomsound rng-tools python-mysqldb curl openssh-server unzip debconf debconf-utils logrotate
+  apt-get install -y git dialog libswitch-perl libwww-perl python-twisted python-crypto python-pyasn1 python-gmpy2 python-zope.interface python-pip python-gmpy python-gmpy2 python-requests mysql-client randomsound rng-tools python-mysqldb curl openssh-server unzip debconf debconf-utils logrotate sudo
 
 # Clone the DShield software
 RUN \
